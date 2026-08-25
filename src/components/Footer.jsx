@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail } from 'lucide-react'
-import { company, nav } from '../data/site'
+import { company, nav, developer } from '../data/site'
 
 const SERVICE_LINKS = [
   'Ground Mounted EPC', 'Balance of System', 'Material Supply',
@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid gap-11 pb-14 lg:grid-cols-[1.7fr_1fr_1fr_1.3fr]">
           <div>
             <span className="inline-block bg-white px-4 py-3">
-              <img src="/img/logo-compact.svg" alt={company.name} className="h-10" />
+              <img src="/img/logo-header.png" alt={company.name} className="h-11" />
             </span>
             <p className="mt-6 max-w-sm text-[0.87rem] leading-relaxed">
               Solar ground mounted project EPC and complete balance of system packages from
@@ -81,8 +81,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-white/8 py-5 text-[0.76rem]">
+        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-t border-white/8 py-5 text-[0.76rem]">
           <span>© {new Date().getFullYear()} {company.name}. All rights reserved.</span>
+
+          <span className="flex items-center gap-1.5">
+            Developed by
+            <a
+              href={developer.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative font-bold text-gold-500 transition-colors duration-300 hover:text-gold-400"
+            >
+              {developer.name}
+              <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-gold-400 transition-all duration-300 group-hover:w-full" />
+            </a>
+          </span>
+
           <span className="text-[0.66rem] font-bold uppercase tracking-[0.2em] text-slate-600">
             Clean Energy · Brighter Future
           </span>

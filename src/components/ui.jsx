@@ -96,21 +96,13 @@ const SIZES = {
 export function Btn({
   to, href, children, variant = 'dark', size = 'md', icon = true, className = '', ...rest
 }) {
-  const styles = {
-    dark: 'bg-navy-900 text-white hover:bg-gold-600',
-    gold: 'bg-gold-600 text-white hover:bg-navy-900',
-    outline: 'border border-line text-ink hover:border-navy-900 hover:bg-navy-900 hover:text-white',
-    ghost: 'border border-white/25 text-white hover:bg-white hover:text-navy-900',
-    light: 'bg-white text-navy-900 hover:bg-gold-500 hover:text-white',
-  }
-  const cls =
-    `group inline-flex items-center justify-center gap-2 rounded-full font-sans font-bold uppercase
-     tracking-[0.13em] transition-all duration-300 ${SIZES[size]} ${styles[variant]} ${className}`
+  // hover behaviour (fill wipe + lift + icon slide) lives in .btn / .btn--* in index.css
+  const cls = `btn btn--${variant} ${SIZES[size]} ${className}`
 
   const inner = (
     <>
       {children}
-      {icon && <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />}
+      {icon && <ArrowRight className="h-3.5 w-3.5" />}
     </>
   )
   if (to) return <Link to={to} className={cls} {...rest}>{inner}</Link>

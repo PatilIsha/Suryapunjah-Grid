@@ -26,6 +26,12 @@ export const company = {
     'https://www.google.com/maps?q=World%20Trade%20Tower%2C%20Makarba%2C%20Ahmedabad%2C%20Gujarat%20380051&output=embed',
 }
 
+/* credit shown in the footer bottom bar */
+export const developer = {
+  name: 'MiCodeX',
+  url: 'https://mi-code-x.vercel.app/',
+}
+
 export const nav = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
@@ -223,11 +229,6 @@ export const directors = [
     image: '/img/director-1.jpg',
     bio: 'Leads project execution and client relationships at SURYAPUNJAH GRID ENERGY LLP. Involved in ground mounted solar work since 2021 — from structure erection and cabling through to commissioning — and drove the launch of the firm as an independent business in 2026.',
     note: 'Reviews every site survey personally before a schedule is committed to a client.',
-    facts: [
-      { k: '2021', v: 'In solar since' },
-      { k: 'EPC', v: 'Execution & delivery' },
-      { k: 'Solapur', v: 'Projects led' },
-    ],
     tel: '+919175855941',
   },
   {
@@ -236,11 +237,6 @@ export const directors = [
     image: '/img/director-2.jpg',
     bio: 'Leads engineering, procurement and site operations. Responsible for balance of system design, vendor selection and the quality checks that run alongside execution — including the 4.8 MW BOS package delivered at Mahud.',
     note: 'Keeps the bill of materials, the drawings and the site reality in agreement with each other.',
-    facts: [
-      { k: 'BOS', v: 'Design & procurement' },
-      { k: '4.8 MW', v: 'Package delivered' },
-      { k: 'QA/QC', v: 'Site quality checks' },
-    ],
     tel: '+917387955941',
   },
 ]

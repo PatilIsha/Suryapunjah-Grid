@@ -51,7 +51,7 @@ export default function Navbar() {
       >
         <div className="shell flex items-center justify-between gap-6 py-3.5">
           <Link to="/" className="shrink-0">
-            <img src="/img/logo-compact.svg" alt={company.name} className="h-10 w-auto sm:h-11" />
+            <img src="/img/logo-header.png" alt={company.name} className="h-10 w-auto sm:h-11" />
           </Link>
 
           <nav className="hidden items-center lg:flex">
@@ -80,23 +80,20 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href={`tel:${company.phones[0].tel}`}
-              className="hidden items-center gap-2.5 xl:flex"
+              className="group hidden items-center gap-2.5 xl:flex"
             >
-              <span className="grid h-9 w-9 place-items-center rounded-full border border-line text-gold-600">
+              <span className="btn-icon h-9 w-9 rounded-full border border-line text-gold-600">
                 <Phone className="h-3.5 w-3.5" />
               </span>
               <span className="leading-tight">
                 <span className="block text-[0.58rem] font-bold uppercase tracking-[0.18em] text-muted">Call us</span>
-                <span className="block font-display text-[0.95rem] font-semibold text-ink">
+                <span className="block font-display text-[0.95rem] font-semibold text-ink transition-colors duration-300 group-hover:text-gold-600">
                   {company.phones[0].display}
                 </span>
               </span>
             </a>
 
-            <Link
-              to="/contact"
-              className="hidden items-center gap-2 rounded-full bg-navy-900 px-5 py-2.5 font-sans text-[0.7rem] font-bold uppercase tracking-[0.14em] text-white transition-colors duration-300 hover:bg-gold-600 sm:inline-flex"
-            >
+            <Link to="/contact" className="btn btn--dark hidden px-5 py-2.5 text-[0.7rem] sm:inline-flex">
               <FileText className="h-3.5 w-3.5" />
               Get a quote
             </Link>
@@ -104,7 +101,7 @@ export default function Navbar() {
             <button
               onClick={() => setOpen(true)}
               aria-label="Open menu"
-              className="grid h-10 w-10 place-items-center rounded-full bg-navy-900 text-white transition hover:bg-gold-600 lg:hidden"
+              className="btn-icon h-10 w-10 rounded-full bg-navy-900 text-white lg:hidden"
             >
               <Menu className="h-4.5 w-4.5" />
             </button>
@@ -127,11 +124,11 @@ export default function Navbar() {
               className="fixed inset-y-0 right-0 z-[90] flex w-[min(21rem,86vw)] flex-col overflow-y-auto bg-white p-6"
             >
               <div className="flex items-center justify-between border-b border-line pb-5">
-                <img src="/img/logo-compact.svg" alt={company.name} className="h-9" />
+                <img src="/img/logo-header.png" alt={company.name} className="h-9" />
                 <button
                   onClick={() => setOpen(false)}
                   aria-label="Close menu"
-                  className="grid h-9 w-9 place-items-center rounded-full bg-mist text-ink transition hover:bg-navy-900 hover:text-white"
+                  className="btn-icon h-9 w-9 rounded-full bg-mist text-ink"
                 >
                   <X className="h-4 w-4" />
                 </button>
@@ -177,7 +174,7 @@ export default function Navbar() {
 
               <Link
                 to="/contact"
-                className="mt-7 bg-navy-900 py-3.5 text-center font-sans text-[0.72rem] font-bold uppercase tracking-[0.15em] text-white"
+                className="btn btn--dark mt-7 w-full py-3.5 text-[0.72rem]"
               >
                 Request a callback
               </Link>

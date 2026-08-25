@@ -60,9 +60,9 @@ export default function Hero() {
             <Btn to="/services" size="lg">View our services</Btn>
             <a
               href={`tel:${company.phones[0].tel}`}
-              className="group inline-flex items-center gap-2.5 rounded-full border border-line px-6 py-3.5 font-sans text-[0.76rem] font-bold uppercase tracking-[0.13em] text-ink transition-colors duration-300 hover:border-navy-900 hover:bg-navy-900 hover:text-white"
+              className="btn btn--outline px-6 py-3.5 text-[0.76rem]"
             >
-              <Phone className="h-3.5 w-3.5 text-gold-600 transition-colors group-hover:text-white" />
+              <Phone className="h-3.5 w-3.5" />
               {company.phones[0].display}
             </a>
           </motion.div>

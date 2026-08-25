@@ -157,10 +157,10 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="group flex w-full items-center justify-center gap-2.5 rounded-full bg-navy-950 py-4 font-sans text-[0.76rem] font-bold uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-gold-600"
+                className="btn btn--dark w-full py-4 text-[0.76rem]"
               >
                 Send enquiry
-                <Send className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                <Send className="h-3.5 w-3.5" />
               </button>
 
               {sent && (

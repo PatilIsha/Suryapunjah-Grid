@@ -153,9 +153,11 @@ export function FloatingActions() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 16 }}
+          whileHover={{ y: -3 }}
+          whileTap={{ y: 0 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 z-50 grid h-11 w-11 place-items-center bg-navy-900 text-white transition-colors duration-300 hover:bg-gold-600"
+          className="btn-icon fixed bottom-6 right-6 z-50 h-11 w-11 bg-navy-900 text-white"
         >
           <ChevronUp className="h-4 w-4" />
         </motion.button>

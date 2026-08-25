@@ -54,7 +54,7 @@ export default function Directors() {
                           <a
                             key={k}
                             href={href}
-                            className="grid h-8 w-8 place-items-center bg-white/90 text-navy-950 transition hover:bg-gold-600 hover:text-white"
+                            className="btn-icon h-8 w-8 bg-white/90 text-navy-950"
                           >
                             <Ico className="h-3.5 w-3.5" />
                           </a>
@@ -63,17 +63,9 @@ export default function Directors() {
                     </div>
                   </div>
 
-                  <div className="flex flex-1 flex-col p-7">
+                  <div className="p-7">
                     <p className="text-[0.9rem] leading-relaxed">{d.bio}</p>
                     <p className="mt-3 text-[0.9rem] leading-relaxed">{d.note}</p>
-                    <div className="mt-auto grid grid-cols-3 gap-px border-t border-line bg-line pt-px">
-                      {d.facts.map((f) => (
-                        <div key={f.k} className="bg-white pt-5">
-                          <span className="block font-display text-[1.05rem] font-semibold uppercase text-ink">{f.k}</span>
-                          <span className="mt-0.5 block text-[0.66rem] uppercase tracking-[0.1em] text-muted">{f.v}</span>
-                        </div>
-                      ))}
-                    </div>
                   </div>
                 </article>
               </Reveal>
