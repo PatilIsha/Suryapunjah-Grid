@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+/* =========================================================
+   SURYAPUNJAH GRID ENERGY LLP — design tokens
+   Industrial B2B system: condensed uppercase display type,
+   flat hairline cards, alternating white / mist / navy bands.
+   Palette from the company logo.
+   ========================================================= */
+@theme {
+  --font-display: "Oswald", "Arial Narrow", ui-sans-serif, sans-serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  /* dark bands */
+  --color-navy-950: #071021;
+  --color-navy-900: #0B1A2E;
+  --color-navy-800: #12253D;
+  --color-navy-700: #1B3557;
+  --color-navy-600: #24457044;
+
+  /* brand accent */
+  --color-gold-400: #FFC846;
+  --color-gold-500: #F5A623;
+  --color-gold-600: #E8801B;
+
+  --color-leaf-500: #5CB338;
+  --color-leaf-600: #4A9429;
+
+  /* neutrals */
+  --color-ink: #0C1524;
+  --color-body: #5A6579;
+  --color-muted: #8792A5;
+  --color-line: #E3E8EF;
+  --color-mist: #F1F4F8;
+
+  --animate-ticker: ticker 42s linear infinite;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* =========================================================
+   Base
+   ========================================================= */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.72;
+    background: #fff;
+    color: var(--color-body);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: 0.005em;
+  }
+  ::selection { background: var(--color-gold-500); color: #fff; }
+
+  ::-webkit-scrollbar { width: 9px; }
+  ::-webkit-scrollbar-track { background: var(--color-mist); }
+  ::-webkit-scrollbar-thumb { background: #C3CCD9; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-gold-500); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* =========================================================
+   Components
+   ========================================================= */
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: 79rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  /* tiny uppercase label that sits above every section heading */
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--color-gold-600);
+  }
+  .eyebrow-light { color: var(--color-gold-400); }
+
+  /* flat hairline card — the workhorse */
+  .card {
+    background: #fff;
+    border: 1px solid var(--color-line);
+    border-radius: 4px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    border-color: #C8D2E0;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px -22px rgba(12, 21, 36, 0.4);
+  }
+  .card-dark {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+  }
+  .card-dark:hover {
+    border-color: rgba(245, 166, 35, 0.45);
+    background: rgba(245, 166, 35, 0.06);
+    transform: translateY(-3px);
+  }
+
+  /* small dark square that holds an icon */
+  .icon-tile {
+    display: grid;
+    place-items: center;
+    width: 2.35rem;
+    height: 2.35rem;
+    border-radius: 3px;
+    background: var(--color-navy-900);
+    color: var(--color-gold-500);
+    flex-shrink: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .card:hover .icon-tile { background: var(--color-gold-600); color: #fff; }
+  .icon-tile-light {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* ghosted step numeral */
+  .ghost-num {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 500;
+    color: #D5DCE6;
+    line-height: 1;
+  }
+
+  /* footer column heading */
+  .footer-head {
+    font-family: var(--font-sans);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-gold-500);
+  }
+
+  /* rule under a heading block */
+  .rule {
+    width: 3rem;
+    height: 2px;
+    background: var(--color-gold-500);
+  }
+}
+
+/* accent word inside a heading */
+.accent { color: var(--color-gold-600); }
+.accent-light { color: var(--color-gold-500); }
