@@ -33,11 +33,13 @@ export default function Directors() {
               <Reveal key={d.name} delay={i * 0.1}>
                 <article className="card group flex h-full flex-col overflow-hidden">
                   <div className="relative h-72 overflow-hidden bg-navy-950 sm:h-80">
-                    <img
-                      src={d.image}
-                      alt={d.name}
-                      className="h-full w-full object-cover object-[50%_28%] transition-transform duration-[900ms] group-hover:scale-105"
-                    />
+                    {d.image && (
+                      <img
+                        src={d.image}
+                        alt={d.name}
+                        className="h-full w-full object-cover object-[50%_28%] transition-transform duration-[900ms] group-hover:scale-105"
+                      />
+                    )}
                     <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-navy-950 to-transparent p-5">
                       <div>
                         <span className="bg-gold-600 px-2.5 py-1 text-[0.6rem] font-bold uppercase tracking-[0.14em] text-white">

@@ -126,7 +126,7 @@ Because the site uses clean URLs (`/about` rather than `/#/about`), the server m
 
 ## Things to replace before going live
 
-1. **Founder photos — placeholders.** The names in `src/data/site.js` → `directors` are correct (**Harshil Lakhiyar** and **Anandiben Lakhiyar**, both Founder), but `public/img/director-1.jpg` and `director-2.jpg` are generic stock portraits. Replace those two files with the real photographs — same filenames, no code change needed.
+1. **Founder photos — not set.** The names in `src/data/site.js` → `directors` are correct (**Harshil Lakhiyar** and **Anandiben Lakhiyar**, both Founder), but the founder cards currently show a blank panel where the portrait goes. To add the real photographs, drop them into `public/img/` and add an `image: '/img/<file>.jpg'` line back to each entry in `directors` — the card renders the photo automatically when that field is present.
 2. **LinkedIn links** — the LinkedIn icon on each founder card points to `#` (in `src/pages/Directors.jsx`). Add the real profile URLs.
 3. **Contact form** — the site is fully static, so the form validates the input and then opens the visitor's mail app addressed to `suryapunjahgridenergy@gmail.com`. For direct-to-inbox delivery, point `submit()` in `src/pages/Contact.jsx` at a service like Formspree, EmailJS or your own PHP endpoint.
 4. **Photography** — the images in `public/img/` are licence-free stock (Unsplash) standing in for real site photos. Replacing them with photographs from Mangalwedha, Mahud and Jalgaon will make the site considerably stronger. Keep the same filenames and no code changes are needed.
