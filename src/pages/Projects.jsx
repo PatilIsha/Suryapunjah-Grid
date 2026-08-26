@@ -123,7 +123,7 @@ export default function Projects() {
               projects are in the Solapur and Jalgaon districts of Maharashtra.
             </p>
             <ul className="mt-6 space-y-3">
-              <Tick><strong className="text-ink">Solapur District</strong> — Margal Vedo and Mahud sites completed in 2026</Tick>
+              <Tick><strong className="text-ink">Solapur District</strong> — Mangalwedha and Mahud sites completed in 2026</Tick>
               <Tick><strong className="text-ink">Jalgaon District</strong> — BOS and supply running through 2026–27</Tick>
               <Tick><strong className="text-ink">Ahmedabad, Gujarat</strong> — head office, engineering and procurement</Tick>
             </ul>

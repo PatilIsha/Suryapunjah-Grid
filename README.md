@@ -62,9 +62,9 @@ export const company = {
 ### Work done (as supplied)
 | Project | Scope | Location | Year | Status |
 |---|---|---|---|---|
-| Mega Volt Project | Ground mounted execution | Margal Vedo, Dist. Solapur | 2026 | Completed |
+| MW Project | Ground mounted execution | Mangalwedha, Dist. Solapur | 2026 | Completed |
 | 4.8 MW BOS | Complete balance of system | Mahud, Dist. Solapur | 2026 | Completed |
-| Mega Volt BOS | BOS + material supply | Dist. Jalgaon | 2026–27 | In progress |
+| MW BOS | BOS + material supply | Dist. Jalgaon | 2026–27 | In progress |
 
 ---
 
@@ -129,5 +129,5 @@ Because the site uses clean URLs (`/about` rather than `/#/about`), the server m
 1. **Founder photos — placeholders.** The names in `src/data/site.js` → `directors` are correct (**Harshil Lakhiyar** and **Anandiben Lakhiyar**, both Founder), but `public/img/director-1.jpg` and `director-2.jpg` are generic stock portraits. Replace those two files with the real photographs — same filenames, no code change needed.
 2. **LinkedIn links** — the LinkedIn icon on each founder card points to `#` (in `src/pages/Directors.jsx`). Add the real profile URLs.
 3. **Contact form** — the site is fully static, so the form validates the input and then opens the visitor's mail app addressed to `suryapunjahgridenergy@gmail.com`. For direct-to-inbox delivery, point `submit()` in `src/pages/Contact.jsx` at a service like Formspree, EmailJS or your own PHP endpoint.
-4. **Photography** — the images in `public/img/` are licence-free stock (Unsplash) standing in for real site photos. Replacing them with photographs from Margal Vedo, Mahud and Jalgaon will make the site considerably stronger. Keep the same filenames and no code changes are needed.
+4. **Photography** — the images in `public/img/` are licence-free stock (Unsplash) standing in for real site photos. Replacing them with photographs from Mangalwedha, Mahud and Jalgaon will make the site considerably stronger. Keep the same filenames and no code changes are needed.
 5. **Logo** — `public/img/logo.png` is the real company logo, background removed and cropped tight; `logo-mark.png` and `favicon.png` are the S-mark cut from it. If you receive a vector (AI/EPS/SVG) version from your designer, replace `logo.png` with it for sharper rendering at large sizes.

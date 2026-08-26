@@ -152,15 +152,15 @@ export const capabilities = [
 
 export const projects = [
   {
-    title: 'Mega Volt Project — Margal Vedo',
+    title: 'MW Project — Mangalwedha',
     image: '/img/project-1.jpg',
     scope: 'Ground mounted project execution',
-    location: 'Margal Vedo, Dist. Solapur',
+    location: 'Mangalwedha, Dist. Solapur',
     year: '2026',
     status: 'Completed',
     capacity: 'Ground Mounted',
     detail:
-      'Mega Volt ground mounted project completed at Margal Vedo — structures, module installation and electrical works delivered and handed over.',
+      'MW ground mounted project completed at Mangalwedha — structures, module installation and electrical works delivered and handed over.',
   },
   {
     title: '4.8 MW Balance of System — Mahud',
@@ -169,12 +169,12 @@ export const projects = [
     location: 'Mahud, Dist. Solapur',
     year: '2026',
     status: 'Completed',
-    capacity: '4.8 Mega Volt',
+    capacity: '4.8 MW',
     detail:
-      'Complete balance of system package for a 4.8 Mega Volt plant — mounting structures, DC and AC cabling, switchgear and earthing, tested and commissioned.',
+      'Complete balance of system package for a 4.8 MW plant — mounting structures, DC and AC cabling, switchgear and earthing, tested and commissioned.',
   },
   {
-    title: 'Mega Volt BOS & Supply — Jalgaon',
+    title: 'MW BOS & Supply — Jalgaon',
     image: '/img/project-3.jpg',
     scope: 'Balance of system works with ongoing supply',
     location: 'Dist. Jalgaon',
@@ -182,7 +182,7 @@ export const projects = [
     status: 'In Progress',
     capacity: 'BOS + Supply',
     detail:
-      'Mega Volt balance of system works with material supply running through the 2026–27 period.',
+      'MW balance of system works with material supply running through the 2026–27 period.',
   },
 ]
 
@@ -199,18 +199,18 @@ export const timeline = [
   },
   {
     year: '2026',
-    title: 'Mega Volt project completed — Margal Vedo',
-    text: 'Ground mounted Mega Volt project completed at Margal Vedo, Dist. Solapur, Maharashtra.',
+    title: 'MW project completed — Mangalwedha',
+    text: 'Ground mounted MW project completed at Mangalwedha, Dist. Solapur, Maharashtra.',
   },
   {
     year: '2026',
     title: '4.8 MW balance of system completed — Mahud',
-    text: 'Full BOS package delivered for a 4.8 Mega Volt plant at Mahud, Dist. Solapur.',
+    text: 'Full BOS package delivered for a 4.8 MW plant at Mahud, Dist. Solapur.',
   },
   {
     year: '2026–27',
     title: 'BOS & supply in progress — Jalgaon',
-    text: 'Mega Volt balance of system works with ongoing material supply for Jalgaon District.',
+    text: 'MW balance of system works with ongoing material supply for Jalgaon District.',
   },
 ]
 
