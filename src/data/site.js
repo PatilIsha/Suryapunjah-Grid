@@ -221,18 +221,19 @@ export const process = [
   { no: '04', title: 'Testing & handover', text: 'Pre-commissioning tests, grid synchronisation and complete documentation on handover.' },
 ]
 
-/* NOTE: the photographs are placeholders — replace with real photos of the founders. */
 export const directors = [
   {
     name: 'Harshil Lakhiyar',
-    role: 'Founder',
+    role: 'Founder & Partner',
+    image: '/img/director-harshil.jpg',
     bio: 'Leads project execution and client relationships at SURYAPUNJAH GRID ENERGY LLP. Involved in ground mounted solar work since 2021 — from structure erection and cabling through to commissioning — and drove the launch of the firm as an independent business in 2026.',
     note: 'Reviews every site survey personally before a schedule is committed to a client.',
     tel: '+919175855941',
   },
   {
     name: 'Anandiben Lakhiyar',
-    role: 'Founder',
+    role: 'Founder & Partner',
+    image: '/img/director-anandiben.jpg',
     bio: 'Leads engineering, procurement and site operations. Responsible for balance of system design, vendor selection and the quality checks that run alongside execution — including the 4.8 MW BOS package delivered at Mahud.',
     note: 'Keeps the bill of materials, the drawings and the site reality in agreement with each other.',
     tel: '+917387955941',
